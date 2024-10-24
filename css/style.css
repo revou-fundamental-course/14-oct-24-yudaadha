@@ -1,3 +1,127 @@
-footer > #copyright {
-  text-align: left;
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.logo img {
+  width: 70px;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 110px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.image-placeholder {
+  width: 1366px;
+  height: 578px;
+  background-color: #ddd;
+  margin: 20px auto;
+}
+
+/* Headquarter Section */
+.headquarter {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.locations {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.location {
+  text-align: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-bottom: 10px;
+}
+
+#anggota {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Message Us Section */
+.message {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submitted-data {
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

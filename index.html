@@ -1,80 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- logo and nvigasi-->
-    <header class="main-header">
-      <div class="logo"></div>
-
+    <header>
+      <div class="logo">
+        <img
+          src="https://www.akun.biz/tips-bisnis/wp-content/uploads/2020/04/tokopedia-wishlist.jpg"
+        />
+      </div>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Profile</a>
-        <a href="#">Portofolio</a>
-        <a href="#">Massage Us</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Profile</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Message Us</a></li>
+        </ul>
       </nav>
     </header>
 
-    <hr />
-
     <main>
-      <section id="section-home">
-        <header>
-          <h1>hi, selamat datang</h1>
-        </header>
-
-        <article>
-          <p>ini adalah website latihan pertama</p>
-        </article>
+      <section class="welcome">
+        <h1 id="welcome-text">Hi, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama</p>
+        <div class="image-placeholder">
+          <img
+            src="https://images.pexels.com/photos/29004795/pexels-photo-29004795/free-photo-of-pencakar-langit-modern-di-cakrawala-gothenburg.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            width="1366"
+            height="578"
+          />
+        </div>
       </section>
 
-      <hr />
-
-      <section id="section-profile">
-        <header>
-          <h1>Profile</h1>
-        </header>
-
-        <article>
-          <div class="profile-article"></div>
-        </article>
+      <section class="headquarter">
+        <h2>Our Headquarter</h2>
+        <div class="locations">
+          <div class="location">
+            <p>Faridl Anjing</p>
+            <div class="circle">
+              <img
+                id="anggota"
+                src="https://media.licdn.com/dms/image/v2/D5635AQFkC2uNZREujQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1728463854732?e=1730214000&v=beta&t=vDgxtfCDU6KJhhYij9IjNw_xXQYHv437_5bbt2vB3Po"
+              />
+            </div>
+            <p>CEO Tokopedia</p>
+          </div>
+          <div class="location">
+            <div class="circle"></div>
+            <p>Bandung</p>
+          </div>
+          <div class="location">
+            <div class="circle"></div>
+            <p>Surabaya</p>
+          </div>
+        </div>
       </section>
 
-      <hr />
+      <section class="message">
+        <h2>Message Us</h2>
+        <form id="messageForm">
+          <label for="name">Nama :</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Nama"
+            required
+          />
 
-      <section id="section-portofolio">
-        <header>
-          <h1>Portofolio</h1>
-        </header>
+          <label for="dob">Tanggal Lahir :</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label>Jenis Kelamin :</label>
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="Laki-Laki"
+            required
+          />
+          <label for="male">Laki-Laki</label>
+          <input type="radio" id="female" name="gender" value="Perempuan" />
+          <label for="female">Perempuan</label>
+
+          <label for="message">Pesan :</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Pesan"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+        <div class="submitted-data">
+          <p id="current-time"></p>
+          <p id="submitted-name"></p>
+          <p id="submitted-dob"></p>
+          <p id="submitted-gender"></p>
+          <p id="submitted-message"></p>
+        </div>
       </section>
-
-      <hr />
-
-      <section id="section-massage">
-        <header>
-          <h1>Massage Us</h1>
-
-          <article>
-            <p>
-              Nama :
-              <br />
-              Tanggal lahir :
-              <br />
-              Jenis Kelamin :
-              <br />
-              Pesan :
-            </p>
-          </article>
-        </header>
-      </section>
-
-      <hr />
     </main>
 
     <footer>
-      <div id="copyright">Copyright @2024</div>
+      <p>Created by Revou</p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
