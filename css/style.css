@@ -10,32 +10,36 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .logo img {
-  width: 70px;
-  height: auto;
-  border: 2px solid #333;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #333;
   border-radius: 110px;
 }
 
 nav ul {
+  padding: 10px;
   list-style: none;
   display: flex;
   gap: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 nav ul li a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   color: black;
 }
 
 /* Welcome Section */
 .welcome {
   text-align: center;
-  margin: 50px 0;
+  margin: 20px 0;
+  font-size: larger;
 }
 
 .image-placeholder {
@@ -94,7 +98,7 @@ form label {
 form input,
 form textarea {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: px solid #ccc;
   border-radius: 5px;
   width: 300px;
 }
@@ -110,18 +114,29 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  width: 320px;
 }
 
 .submitted-data {
+  border: 1px solid black;
   margin-top: 20px;
+  width: 400px;
+  height: 200px;
 }
 
 /* Footer */
 footer {
-  text-align: center;
+  text-align: right;
   padding: 20px;
   background-color: #f0f0f0;
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+hr {
+  height: 3px;
+  border-width: 0;
+  color: black;
+  background-color: black;
 }
