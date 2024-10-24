@@ -23,27 +23,29 @@ document
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("messageForm");
-  const currentTimeElement = document.getElementById("current-time");
-  const submittedNameElement = document.getElementById("submitted-name");
-  const submittedDobElement = document.getElementById("submitted-dob");
-  const submittedGenderElement = document.getElementById("submitted-gender");
-  const submittedMessageElement = document.getElementById("submitted-message");
+  const currentTime = document.getElementById("current-time");
+  const submittedName = document.getElementById("submitted-name");
+  const submittedDob = document.getElementById("submitted-dob");
+  const submittedGender = document.getElementById("submitted-gender");
+  const submittedMessage = document.getElementById("submitted-message");
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Get form values
+    // Get current time
+    const now = new Date();
+    currentTime.textContent = `Current time: ${now.toLocaleString()}`;
+
+    // Get form data
     const name = document.getElementById("name").value;
     const dob = document.getElementById("dob").value;
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const message = document.getElementById("message").value;
 
     // Display submitted data
-    const currentTime = new Date().toLocaleString();
-    currentTimeElement.textContent = `Current time: ${currentTime}`;
-    submittedNameElement.textContent = `Nama: ${name}`;
-    submittedDobElement.textContent = `Tanggal Lahir: ${dob}`;
-    submittedGenderElement.textContent = `Jenis Kelamin: ${gender}`;
-    submittedMessageElement.textContent = `Pesan: ${message}`;
+    submittedName.textContent = `Nama: ${name}`;
+    submittedDob.textContent = `Tanggal Lahir: ${dob}`;
+    submittedGender.textContent = `Jenis Kelamin: ${gender}`;
+    submittedMessage.textContent = `Pesan: ${message}`;
   });
 });

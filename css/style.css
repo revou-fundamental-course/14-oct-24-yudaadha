@@ -118,20 +118,23 @@ button {
 }
 
 .submitted-data {
-  border: 1px solid black;
-  margin-top: 20px;
+  flex: 1;
+  margin-left: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
   width: 400px;
   height: 200px;
 }
 
 /* Footer */
 footer {
+  font-size: larger;
+  font-weight: bold;
   text-align: right;
-  padding: 20px;
-  background-color: #f0f0f0;
+  background-color: white;
   position: relative;
   bottom: 0;
-  width: 100%;
+  width: 99%;
 }
 
 hr {
@@ -139,4 +142,14 @@ hr {
   border-width: 0;
   color: black;
   background-color: black;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-section {
+  flex: 1;
+  margin-right: 20px;
 }
