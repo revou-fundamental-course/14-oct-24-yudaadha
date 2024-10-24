@@ -15,10 +15,10 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our Profile</a></li>
+          <li><a href="#welcome-text">Home</a></li>
+          <li><a href="#head">Our Profile</a></li>
           <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Message Us</a></li>
+          <li><a href="#message">Message Us</a></li>
         </ul>
       </nav>
     </header>
@@ -28,7 +28,14 @@
     <main>
       <section class="welcome">
         <h1 id="welcome-text">Hi, Welcome To Gojek</h1>
-        <p>pliss</p>
+        <p>
+          Gojek adalah perusahaan teknologi asal Indonesia yang menyediakan
+          berbagai layanan on-demand, terutama melalui aplikasi mobile. Gojek
+          awalnya didirikan sebagai layanan transportasi berbasis ojek
+          (motorbike taxi) pada tahun 2010 oleh Nadiem Makarim. Namun, seiring
+          perkembangan waktu, Gojek berevolusi menjadi platform super-app dengan
+          beragam layanan lainnya.
+        </p>
         <div class="image-placeholder">
           <img
             src="https://images.pexels.com/photos/29029041/pexels-photo-29029041/free-photo-of-cakrawala-kota-new-york-dengan-pencakar-langit-modern.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -41,7 +48,7 @@
       <hr />
 
       <section class="headquarter">
-        <h2>Our Headquarter</h2>
+        <h2 id="head">Our Headquarter</h2>
         <div class="locations">
           <div class="location">
             <div class="circle">
@@ -50,15 +57,25 @@
                 src="https://media.licdn.com/dms/image/v2/D5635AQFkC2uNZREujQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1728463854732?e=1730214000&v=beta&t=vDgxtfCDU6KJhhYij9IjNw_xXQYHv437_5bbt2vB3Po"
               />
             </div>
-            <p>CEO</p>
+            <p>Ketua</p>
           </div>
           <div class="location">
-            <div class="circle"></div>
-            <p></p>
+            <div class="circle">
+              <img
+                id="anggota"
+                src="https://media.licdn.com/dms/image/v2/D5603AQFUaOPm3_td4w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727968333476?e=1735171200&v=beta&t=-svJfrCc7ghOjFpnTa_2T06zJe5S2GpEQSyf-gKVhlI"
+              />
+            </div>
+            <p>Wakil Ketua</p>
           </div>
           <div class="location">
-            <div class="circle"></div>
-            <p>Surabaya</p>
+            <div class="circle">
+              <img
+                id="anggota"
+                src=" https://media.licdn.com/dms/image/v2/D5603AQEu7ZATnxLnRg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719130564227?e=1735171200&v=beta&t=x19A-4E90QnH9YKrf9_U9JLqT8LIi0E26uA7wYNopNc"
+              />
+            </div>
+            <p>Anggota</p>
           </div>
         </div>
       </section>
@@ -82,19 +99,24 @@
 
               <label for="dob">Tanggal Lahir :</label>
               <input type="date" id="dob" name="dob" required />
-
-              <label>Jenis Kelamin :</label>
-              <input
-                type="radio"
-                id="male"
-                name="gender"
-                value="Laki-Laki"
-                required
-              />
-              <label for="male">Laki-Laki</label>
-              <input type="radio" id="female" name="gender" value="Perempuan" />
-              <label for="female">Perempuan</label>
-
+              <div class="switch">
+                <label>Jenis Kelamin :</label>
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="Laki-Laki"
+                  required
+                />
+                <label for="male">Laki-Laki</label>
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  value="Perempuan"
+                />
+                <label for="female">Perempuan</label>
+              </div>
               <label for="message">Pesan :</label>
               <textarea
                 id="message"

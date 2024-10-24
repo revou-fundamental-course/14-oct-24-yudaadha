@@ -98,9 +98,9 @@ form label {
 form input,
 form textarea {
   padding: 10px;
-  border: px solid #ccc;
+  border: 3px solid black;
   border-radius: 5px;
-  width: 300px;
+  width: 320px;
 }
 
 form textarea {
@@ -114,7 +114,8 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  width: 320px;
+  width: 345px;
+  border-radius: 5px;
 }
 
 .submitted-data {
@@ -139,7 +140,6 @@ footer {
 
 hr {
   height: 3px;
-  border-width: 0;
   color: black;
   background-color: black;
 }
@@ -152,4 +152,21 @@ hr {
 .form-section {
   flex: 1;
   margin-right: 20px;
+}
+
+.switch {
+  display: flex;
+  width: 50px;
+  height: 15px;
+  text-align: start;
+  white-space: nowrap;
+}
+.switch input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 10px;
+  transform: scale(1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
